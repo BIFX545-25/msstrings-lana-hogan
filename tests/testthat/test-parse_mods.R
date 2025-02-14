@@ -1,0 +1,11 @@
+test_that("parse_mods works", {
+  data(MSfrags)
+  
+  #check with one string
+  test1 <- parse_mods(MSfrags[1])
+  
+  #for checking that returned objects have the correct class
+  expect_s3_class(test1, "protein_mods")
+  
+  
+})
